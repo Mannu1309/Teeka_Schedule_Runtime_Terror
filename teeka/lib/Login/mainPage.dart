@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:startup_punjab/Startup/signUp.dart' as startup;
-import 'package:startup_punjab/Widgets/styles.dart';
-import 'package:startup_punjab/Widgets/widgets.dart';
-import 'package:startup_punjab/Govt/signUp.dart' as govt;
+import 'package:teeka/Parents/signUp.dart' as startup;
+import 'package:teeka/Widgets/styles.dart';
+import 'package:teeka/Widgets/widgets.dart';
+import 'package:teeka/Doctor/signUp.dart' as govt;
 
 class MainPage extends StatefulWidget {
   @override
@@ -68,15 +68,15 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
         labelColor: Theme.of(context).primaryColor,
         tabs: <Widget>[
           Tab(
-            child: Text("Startup"),
+            child: Text("Parents"),
             icon: Icon(
-              FontAwesomeIcons.rocket,
+              Icons.people,
             ),
           ),
           Tab(
-            child: Text("Authority"),
+            child: Text("Doctors"),
             icon: Icon(
-              FontAwesomeIcons.building,
+              FontAwesomeIcons.ambulance,
             ),
           ),
         ],

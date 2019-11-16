@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:startup_punjab/Widgets/styles.dart';
+import 'package:teeka/Widgets/styles.dart';
 
 Widget title({
   @required String text,
@@ -20,6 +20,7 @@ Widget subTitle({
     style: Styles(context).subTitle(),
   );
 }
+
 Widget buttonText({
   @required String text,
   @required BuildContext context,
