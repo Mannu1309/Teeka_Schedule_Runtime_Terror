@@ -4,10 +4,10 @@ class db:
     #Initializing
     def __init__(self):
         self.connection=False
-        self.host='35.200.232.172'
-        self.user='student360'
-        self.password='student360'
-        self.database='student360'
+        self.host='34.93.63.139'
+        self.user='teeka'
+        self.password='teeka'
+        self.database='teeka'
         self.connect_db()
 
     #Creating Database connection
@@ -18,7 +18,7 @@ class db:
                                     user=self.user,
                                     password=self.password,
                                     db=self.database)
-                #print("Databese connected successfully")
+                print("Databese connected successfully")
             except Exception:
                 return print("Failed to connect database")
     
