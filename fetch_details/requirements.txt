@@ -1,0 +1,4 @@
+Flask==1.0.2
+Flask_Cors==3.0.7
+PyMySQL==0.9.3
+gunicorn==19.9.0
