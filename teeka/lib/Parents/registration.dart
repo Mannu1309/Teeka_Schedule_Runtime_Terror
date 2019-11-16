@@ -101,25 +101,25 @@ class _RegistrationState extends State<Registration> {
               physics: BouncingScrollPhysics(),
               children: <Widget>[
                 ListTile(
-                  title: title(context: context, text: "Register Startup"),
+                  title: title(context: context, text: "Parents Registration"),
                   dense: true,
                 ),
                 padding(
                   formFields(
                     context: context,
                     controller: sname,
-                    hintText: "Startup Name",
+                    hintText: "Name",
                     validator: validate,
                   ),
                 ),
-                padding(
-                  formFields(
-                    context: context,
-                    controller: cname,
-                    hintText: "CEO Name",
-                    validator: validate,
-                  ),
-                ),
+                // padding(
+                //   formFields(
+                //     context: context,
+                //     controller: cname,
+                //     hintText: "CEO Name",
+                //     validator: validate,
+                //   ),
+                // ),
                 padding(
                   formFields(
                     context: context,
@@ -178,31 +178,31 @@ class _RegistrationState extends State<Registration> {
                   formFields(
                     context: context,
                     controller: funding,
-                    hintText: "Funding",
+                    hintText: "Nationality",
                     validator: validate,
                   ),
                 ),
-                padding(
-                  formFields(
-                    context: context,
-                    controller: industry,
-                    hintText: "Industry",
-                    validator: validate,
-                  ),
-                ),
-                padding(
-                  formFields(
-                    context: context,
-                    controller: sector,
-                    hintText: "Sector",
-                    validator: validate,
-                  ),
-                ),
+                // padding(
+                //   formFields(
+                //     context: context,
+                //     controller: industry,
+                //     hintText: "Industry",
+                //     validator: validate,
+                //   ),
+                // ),
+                // padding(
+                //   formFields(
+                //     context: context,
+                //     controller: sector,
+                //     hintText: "Sector",
+                //     validator: validate,
+                //   ),
+                // ),
                 padding(
                   button(
                     context: context,
                     function: onRegister,
-                    text: "Register Startup",
+                    text: "Register",
                   ),
                 ),
               ],

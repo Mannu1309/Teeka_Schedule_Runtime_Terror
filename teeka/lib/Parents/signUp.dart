@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teeka/Parents/dashboard.dart';
 import 'package:teeka/Parents/registration.dart';
 import 'package:teeka/Widgets/styles.dart';
 import 'package:teeka/Widgets/widgets.dart';
@@ -36,7 +37,7 @@ class _SignUpState extends State<SignUp> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        // builder: (context) => Dashboard(),
+        builder: (context) => Dashboard(),
         fullscreenDialog: true,
       ),
     );
@@ -51,11 +52,23 @@ class _SignUpState extends State<SignUp> {
       child: ListView(
         physics: BouncingScrollPhysics(),
         children: <Widget>[
-          // Image.asset(
-          //   'assets/logo.png',
-          //   alignment: Alignment.center,
-          //   height: MediaQuery.of(context).size.height * 0.1,
-          // ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Image.asset(
+                'assets/symbol.png',
+                alignment: Alignment.center,
+                height: MediaQuery.of(context).size.height * 0.1,
+              ),
+              Text(
+                "Teeka Schedule",
+                style: Styles(context).title().copyWith(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.w500,
+                    ),
+              )
+            ],
+          ),
           ListTile(
             dense: true,
             title: title(context: context, text: "Login"),
