@@ -1,6 +1,6 @@
 # HackTIET_2019 Hackathon
 
-Project Name: Teeka Schedule
+Project: Teeka Schedule
 
 Team Members:
 - Aman Malhotra
